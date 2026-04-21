@@ -11,7 +11,7 @@ export default function AboutPage() {
     e.preventDefault();
     setStatus('Жіберілуде... (Отправка...)');
     try {
-      const res = await fetch('http://localhost:5001/api/feedback', {
+      const res = await fetch('https://ifeelyou-back.onrender.com/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

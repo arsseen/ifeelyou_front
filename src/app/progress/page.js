@@ -17,7 +17,7 @@ export default function ProgressPage() {
       setUser(currentUser);
       if (currentUser) {
         try {
-          const res = await fetch(`http://localhost:5001/api/progress/${currentUser.uid}`);
+          const res = await fetch(`https://ifeelyou-back.onrender.com/api/progress/${currentUser.uid}`);
           const data = await res.json();
           setHistory(data);
         } catch (error) {
